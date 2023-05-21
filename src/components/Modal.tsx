@@ -6,12 +6,6 @@ type ModalProps = {
   slug: string;
   setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
-type ModalDetail = {
-  _id: string;
-  title: string;
-  cover: string;
-  body: string;
-};
 const Modal = ({ slug, setIsModalOpen }: ModalProps) => {
   const {
     data: blog,
